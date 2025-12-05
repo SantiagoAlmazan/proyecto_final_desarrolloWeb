@@ -2,8 +2,6 @@
 
 
 
-# Documentación Técnica: Sistema de Gestión de Citas Médicas
-
 ## 1. Decisiones de diseño tomadas
 
 - **Arquitectura Cliente-Servidor:**  
