@@ -1,0 +1,58 @@
+[
+  {
+    "id": "P004",
+    "nombre": "Martha",
+    "edad": 30,
+    "telefono": "555-9986",
+    "email": "martha.chavez@email.com",
+    "fechaRegistro": "2025-11-15"
+  },
+  {
+    "id": "P005",
+    "nombre": "Julio",
+    "edad": 30,
+    "telefono": "555-8998",
+    "email": "julito@email.com",
+    "fechaRegistro": "2025-11-15"
+  },
+  {
+    "id": "P006",
+    "nombre": "denisse",
+    "edad": 19,
+    "telefono": "6645489934",
+    "email": "nissde2546@gmail.com",
+    "fechaRegistro": "2025-12-05"
+  },
+  {
+    "id": "P006",
+    "nombre": "gabriel",
+    "edad": 28,
+    "telefono": "555-669",
+    "email": "gabriel@email.com",
+    "fechaRegistro": "2025-12-05"
+  },
+  {
+    "id": "P007",
+    "nombre": "isaias",
+    "edad": 30,
+    "telefono": "665899898",
+    "email": "isaias@gmail.com",
+    "fechaRegistro": "2025-12-05"
+  },
+  {
+    "id": "P007",
+    "nombre": "Karla",
+    "edad": 35,
+    "telefono": "6659893265",
+    "email": "karla@gmail.com",
+    "fechaRegistro": "2025-12-05"
+  },
+  {
+    "id": "P008",
+    "nombre": "brianna",
+    "edad": 40,
+    "telefono": "6631004587",
+    "email": "brianna@gmail.com",
+    "fechaRegistro": "2025-12-05"
+  }
+]

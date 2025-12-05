@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Doctor</title>
+    <style>
+  /* ===== Paleta y tipografía base ===== */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    color: #333;
+  }
+
+  h1, h2, h3 {
+    color: #2c3e50;
+  }
+
+  a {
+    text-decoration: none;
+    color: #3498db;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* ===== Header / Navegación ===== */
+  .topbar, .header {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topbar h1, .header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  nav.menu a, nav a {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+  }
+
+  nav.menu a.activo, nav a.active {
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 2px;
+  }
+
+  /* ===== Contenedor principal ===== */
+  .contenedor, .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  /* ===== Botones ===== */
+  .btn, button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+
+  .btn:hover, button:hover {
+    background-color: #2980b9;
+  }
+
+  /* ===== Barra superior de búsqueda ===== */
+  .barra-superior {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .barra-superior input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+  }
+
+  /* ===== Tablas ===== */
+  .tabla-contenedor {
+    overflow-x: auto;
+  }
+
+  table.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  table.tabla th, table.tabla td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  table.tabla th {
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+  }
+
+  table.tabla tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .acciones button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+
+  /* ===== Cards ===== */
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .mt-20 {
+    margin-top: 20px;
+  }
+
+  /* ===== Formularios ===== */
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+  }
+
+  form button {
+    margin-top: 10px;
+  }
+
+  /* ===== Listas simples ===== */
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+  }
+</style>
+
+</head>
+<body>
+
+<header class="topbar">
+    <h1 id="doctorNombre">Agenda del Doctor</h1>
+    <nav class="menu">
+        <a href="index.html">Dashboard</a>
+        <a href="doctores.html">Doctores</a>
+    </nav>
+</header>
+
+<main class="contenedor">
+<section class="card mt-20">
+    <h3>Disponibilidad del Doctor</h3>
+    <canvas id="slotsChart"></canvas>
+</section>
+
+    <!-- Filtros -->
+    <div class="barra-superior">
+        <label for="filtroFecha">Filtrar por fecha:</label>
+        <select id="filtroFecha">
+            <option value="hoy">Hoy</option>
+            <option value="semana">Esta semana</option>
+            <option value="proximos7">Próximos 7 días</option>
+        </select>
+    </div>
+
+    <!-- Resumen -->
+    <div class="resumen-citas">
+        <p>Total citas programadas: <span id="totalProgramadas">0</span></p>
+        <p>Total canceladas: <span id="totalCanceladas">0</span></p>
+    </div>
+
+    <!-- Tabla de citas -->
+    <div class="tabla-contenedor">
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Paciente</th>
+                    <th>Motivo</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCitasBody">
+                <!-- Contenido generado por JS -->
+            </tbody>
+        </table>
+    </div>
+<!-- Gráfica de slots -->
+
+</main>
+
+<script src="js/doctor-agenda.js"></script>
+</body>
+</html>

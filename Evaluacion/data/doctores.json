@@ -1,0 +1,156 @@
+[
+  {
+    "id": "D001",
+    "nombre": "Dr. Carlos Méndez",
+    "especialidad": "Cardiología",
+    "horarioInicio": "09:00",
+    "horarioFin": "17:00",
+    "diasDisponibles": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  },
+  {
+    "id": "D002",
+    "nombre": "Dr. Santiago Almazan",
+    "especialidad": "Medico General",
+    "horarioInicio": "09:00",
+    "horarioFin": "17:00",
+    "diasDisponibles": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  },
+  {
+    "id": "D003",
+    "nombre": "Dr. Carrasco",
+    "especialidad": "Cardiología",
+    "horarioInicio": "09:00",
+    "horarioFin": "17:00",
+    "diasDisponibles": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  },
+  {
+    "id": "D004",
+    "nombre": "Dr. Benavides",
+    "especialidad": "Pediatra",
+    "horarioInicio": "09:00",
+    "horarioFin": "17:00",
+    "diasDisponibles": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  },
+  {
+    "id": "D005",
+    "nombre": "Dr. Gonzalez",
+    "especialidad": "Anestesiologo",
+    "horarioInicio": "09:00",
+    "horarioFin": "17:00",
+    "diasDisponibles": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  },
+  {
+    "id": "D006",
+    "nombre": "Dr. Uriel",
+    "especialidad": "Anestesiologo",
+    "horarioInicio": "09:00",
+    "horarioFin": "17:00",
+    "diasDisponibles": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  },
+  {
+    "id": "D007",
+    "nombre": "Dr. Sofia Garner",
+    "especialidad": "Cardiología",
+    "horarioInicio": "09:00",
+    "horarioFin": "17:00",
+    "diasDisponibles": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  },
+  {
+    "id": "D008",
+    "nombre": "denisse",
+    "especialidad": "Odontologia",
+    "horarioInicio": "08:00",
+    "horarioFin": "18:00",
+    "diasDisponibles": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  },
+  {
+    "id": "D009",
+    "nombre": "Oscar",
+    "especialidad": "Odontologia",
+    "horarioInicio": "08:01",
+    "horarioFin": "18:01",
+    "diasDisponibles": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  },
+  {
+    "id": "D010",
+    "nombre": "Ulises",
+    "especialidad": "Odontologia",
+    "horarioInicio": "08:10",
+    "horarioFin": "18:10",
+    "diasDisponibles": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  },
+  {
+    "id": "D011",
+    "nombre": "Martha",
+    "especialidad": "Cardiologo",
+    "horarioInicio": "08:19",
+    "horarioFin": "16:19",
+    "diasDisponibles": [
+      "Lunes",
+      "Martes",
+      "Miércoles",
+      "Jueves",
+      "Viernes"
+    ]
+  }
+]

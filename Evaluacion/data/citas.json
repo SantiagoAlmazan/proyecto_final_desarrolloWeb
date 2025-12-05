@@ -1,0 +1,164 @@
+[
+  {
+    "id": "C001",
+    "pacienteId": "P001",
+    "doctorId": "D001",
+    "fecha": "2025-11-10",
+    "hora": "10:00",
+    "motivo": "Revisión general",
+    "estado": "cancelada"
+  },
+  {
+    "id": "C002",
+    "pacienteId": "P003",
+    "doctorId": "D001",
+    "fecha": "2025-11-18",
+    "hora": "10:00",
+    "motivo": "Revisión general",
+    "estado": "cancelada"
+  },
+  {
+    "id": "C003",
+    "pacienteId": "P004",
+    "doctorId": "D001",
+    "fecha": "2025-11-18",
+    "hora": "11:00",
+    "motivo": "Revisión general",
+    "estado": "cancelada"
+  },
+  {
+    "id": "C004",
+    "pacienteId": "P005",
+    "doctorId": "D002",
+    "fecha": "2025-11-18",
+    "hora": "11:00",
+    "motivo": "Revisión general",
+    "estado": "cancelada"
+  },
+  {
+    "id": "C005",
+    "pacienteId": "P001",
+    "doctorId": "D002",
+    "fecha": "2025-11-19",
+    "hora": "15:00",
+    "motivo": "Revisión general",
+    "estado": "cancelada"
+  },
+  {
+    "id": "C006",
+    "pacienteId": "P001",
+    "doctorId": "D001",
+    "fecha": "2025-11-18",
+    "hora": "12:00",
+    "motivo": "Revisión general",
+    "estado": "cancelada"
+  },
+  {
+    "id": "C007",
+    "pacienteId": "P004",
+    "doctorId": "D001",
+    "fecha": "2025-11-18",
+    "hora": "14:00",
+    "motivo": "Revisión general",
+    "estado": "programada"
+  },
+  {
+    "id": "C999",
+    "pacienteId": "P001",
+    "doctorId": "D001",
+    "fecha": "2025-12-03",
+    "hora": "23:59",
+    "motivo": "Prueba",
+    "estado": "programada"
+  },
+  {
+    "id": "C999",
+    "pacienteId": "P001",
+    "doctorId": "D001",
+    "fecha": "2025-12-05",
+    "hora": "19:59",
+    "motivo": "Prueba",
+    "estado": "programada"
+  },
+  {
+    "id": "C010",
+    "pacienteId": "P006",
+    "doctorId": "D004",
+    "fecha": "2025-12-06",
+    "hora": "12:16",
+    "motivo": "tos",
+    "estado": "programada"
+  },
+  {
+    "id": "C011",
+    "pacienteId": "P006",
+    "doctorId": "D002",
+    "fecha": "2025-12-06",
+    "hora": "15:17",
+    "motivo": "tos seca",
+    "estado": "cancelada"
+  },
+  {
+    "id": "C012",
+    "pacienteId": "P006",
+    "doctorId": "D003",
+    "fecha": "2025-12-06",
+    "hora": "15:24",
+    "motivo": "diarrea",
+    "estado": "programada"
+  },
+  {
+    "id": "C013",
+    "pacienteId": "P003",
+    "doctorId": "D007",
+    "fecha": "2025-12-06",
+    "hora": "15:26",
+    "motivo": "revision",
+    "estado": "programada"
+  },
+  {
+    "id": "C014",
+    "pacienteId": "P004",
+    "doctorId": "D003",
+    "fecha": "2026-01-02",
+    "hora": "15:28",
+    "motivo": "test",
+    "estado": "programada"
+  },
+  {
+    "id": "C015",
+    "pacienteId": "P006",
+    "doctorId": "D005",
+    "fecha": "2025-12-06",
+    "hora": "13:53",
+    "motivo": "test",
+    "estado": "cancelada"
+  },
+  {
+    "id": "C016",
+    "pacienteId": "P006",
+    "doctorId": "D002",
+    "fecha": "2025-12-06",
+    "hora": "11:03",
+    "motivo": "tos seca",
+    "estado": "cancelada"
+  },
+  {
+    "id": "C017",
+    "pacienteId": "P006",
+    "doctorId": "D004",
+    "fecha": "2025-12-06",
+    "hora": "13:11",
+    "motivo": "revision",
+    "estado": "cancelada"
+  },
+  {
+    "id": "C018",
+    "pacienteId": "P004",
+    "doctorId": "D003",
+    "fecha": "2025-12-10",
+    "hora": "12:21",
+    "motivo": "tos",
+    "estado": "programada"
+  }
+]
